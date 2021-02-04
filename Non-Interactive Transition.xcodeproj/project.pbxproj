@@ -13,6 +13,9 @@
 		9E52726025C97C5B00F37767 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E52725E25C97C5B00F37767 /* Main.storyboard */; };
 		9E52726225C97C5B00F37767 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E52726125C97C5B00F37767 /* Assets.xcassets */; };
 		9E52726525C97C5B00F37767 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E52726325C97C5B00F37767 /* LaunchScreen.storyboard */; };
+		9E52726F25C97FD300F37767 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E52726E25C97FD300F37767 /* SecondViewController.swift */; };
+		9E52727225C980CB00F37767 /* PresentTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E52727125C980CB00F37767 /* PresentTransition.swift */; };
+		9E975F1725C9892800C0670F /* DismissTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E975F1625C9892800C0670F /* DismissTransition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		9E52726125C97C5B00F37767 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E52726425C97C5B00F37767 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9E52726625C97C5B00F37767 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E52726E25C97FD300F37767 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		9E52727125C980CB00F37767 /* PresentTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentTransition.swift; sourceTree = "<group>"; };
+		9E975F1625C9892800C0670F /* DismissTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissTransition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,9 @@
 				9E52725825C97C5B00F37767 /* AppDelegate.swift */,
 				9E52725A25C97C5B00F37767 /* SceneDelegate.swift */,
 				9E52725C25C97C5B00F37767 /* ViewController.swift */,
+				9E52726E25C97FD300F37767 /* SecondViewController.swift */,
+				9E52727125C980CB00F37767 /* PresentTransition.swift */,
+				9E975F1625C9892800C0670F /* DismissTransition.swift */,
 				9E52725E25C97C5B00F37767 /* Main.storyboard */,
 				9E52726125C97C5B00F37767 /* Assets.xcassets */,
 				9E52726325C97C5B00F37767 /* LaunchScreen.storyboard */,
@@ -137,7 +146,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E52726F25C97FD300F37767 /* SecondViewController.swift in Sources */,
+				9E975F1725C9892800C0670F /* DismissTransition.swift in Sources */,
 				9E52725D25C97C5B00F37767 /* ViewController.swift in Sources */,
+				9E52727225C980CB00F37767 /* PresentTransition.swift in Sources */,
 				9E52725925C97C5B00F37767 /* AppDelegate.swift in Sources */,
 				9E52725B25C97C5B00F37767 /* SceneDelegate.swift in Sources */,
 			);
@@ -289,6 +301,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YL6N8LP6KK;
 				INFOPLIST_FILE = "Non-Interactive Transition/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,6 +321,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YL6N8LP6KK;
 				INFOPLIST_FILE = "Non-Interactive Transition/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
