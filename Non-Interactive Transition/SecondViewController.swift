@@ -17,7 +17,14 @@ class SecondViewController: UIViewController {
     
 
     @IBAction func dismissClicked(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
+        test()
     }
-
+    
+    @objc func handleTapDismission(recognizer: UIGestureRecognizer) {
+        test()
+    }
+    
+    func test() {
+        dismiss(animated: true, completion: nil)
+    }
 }

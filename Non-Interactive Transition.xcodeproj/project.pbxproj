@@ -8,28 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		9E52725925C97C5B00F37767 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E52725825C97C5B00F37767 /* AppDelegate.swift */; };
-		9E52725B25C97C5B00F37767 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E52725A25C97C5B00F37767 /* SceneDelegate.swift */; };
 		9E52725D25C97C5B00F37767 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E52725C25C97C5B00F37767 /* ViewController.swift */; };
 		9E52726025C97C5B00F37767 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E52725E25C97C5B00F37767 /* Main.storyboard */; };
 		9E52726225C97C5B00F37767 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E52726125C97C5B00F37767 /* Assets.xcassets */; };
 		9E52726525C97C5B00F37767 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E52726325C97C5B00F37767 /* LaunchScreen.storyboard */; };
 		9E52726F25C97FD300F37767 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E52726E25C97FD300F37767 /* SecondViewController.swift */; };
-		9E52727225C980CB00F37767 /* PresentTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E52727125C980CB00F37767 /* PresentTransition.swift */; };
-		9E975F1725C9892800C0670F /* DismissTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E975F1625C9892800C0670F /* DismissTransition.swift */; };
+		C9DFA953286EF16700797509 /* SlideInPresentationAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DFA950286EF16700797509 /* SlideInPresentationAnimator.swift */; };
+		C9DFA954286EF16700797509 /* SlideInPresentationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DFA951286EF16700797509 /* SlideInPresentationManager.swift */; };
+		C9DFA955286EF16700797509 /* SlideInPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DFA952286EF16700797509 /* SlideInPresentationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9E52725525C97C5B00F37767 /* Non-Interactive Transition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Non-Interactive Transition.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E52725825C97C5B00F37767 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9E52725A25C97C5B00F37767 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		9E52725C25C97C5B00F37767 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9E52725F25C97C5B00F37767 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9E52726125C97C5B00F37767 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E52726425C97C5B00F37767 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9E52726625C97C5B00F37767 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E52726E25C97FD300F37767 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		9E52727125C980CB00F37767 /* PresentTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentTransition.swift; sourceTree = "<group>"; };
-		9E975F1625C9892800C0670F /* DismissTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissTransition.swift; sourceTree = "<group>"; };
+		C9DFA950286EF16700797509 /* SlideInPresentationAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideInPresentationAnimator.swift; sourceTree = "<group>"; };
+		C9DFA951286EF16700797509 /* SlideInPresentationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideInPresentationManager.swift; sourceTree = "<group>"; };
+		C9DFA952286EF16700797509 /* SlideInPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideInPresentationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,18 +62,26 @@
 		9E52725725C97C5B00F37767 /* Non-Interactive Transition */ = {
 			isa = PBXGroup;
 			children = (
+				C9DFA94F286EF16700797509 /* Presentation */,
 				9E52725825C97C5B00F37767 /* AppDelegate.swift */,
-				9E52725A25C97C5B00F37767 /* SceneDelegate.swift */,
 				9E52725C25C97C5B00F37767 /* ViewController.swift */,
 				9E52726E25C97FD300F37767 /* SecondViewController.swift */,
-				9E52727125C980CB00F37767 /* PresentTransition.swift */,
-				9E975F1625C9892800C0670F /* DismissTransition.swift */,
 				9E52725E25C97C5B00F37767 /* Main.storyboard */,
 				9E52726125C97C5B00F37767 /* Assets.xcassets */,
 				9E52726325C97C5B00F37767 /* LaunchScreen.storyboard */,
 				9E52726625C97C5B00F37767 /* Info.plist */,
 			);
 			path = "Non-Interactive Transition";
+			sourceTree = "<group>";
+		};
+		C9DFA94F286EF16700797509 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				C9DFA950286EF16700797509 /* SlideInPresentationAnimator.swift */,
+				C9DFA951286EF16700797509 /* SlideInPresentationManager.swift */,
+				C9DFA952286EF16700797509 /* SlideInPresentationController.swift */,
+			);
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,11 +155,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E52726F25C97FD300F37767 /* SecondViewController.swift in Sources */,
-				9E975F1725C9892800C0670F /* DismissTransition.swift in Sources */,
+				C9DFA953286EF16700797509 /* SlideInPresentationAnimator.swift in Sources */,
 				9E52725D25C97C5B00F37767 /* ViewController.swift in Sources */,
-				9E52727225C980CB00F37767 /* PresentTransition.swift in Sources */,
+				C9DFA955286EF16700797509 /* SlideInPresentationController.swift in Sources */,
 				9E52725925C97C5B00F37767 /* AppDelegate.swift in Sources */,
-				9E52725B25C97C5B00F37767 /* SceneDelegate.swift in Sources */,
+				C9DFA954286EF16700797509 /* SlideInPresentationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,14 +307,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = YL6N8LP6KK;
+				DEVELOPMENT_TEAM = SVKXCL5QB5;
 				INFOPLIST_FILE = "Non-Interactive Transition/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "swiftPal.Non-Interactive-Transition";
+				PRODUCT_BUNDLE_IDENTIFIER = com.andes.slideinMenu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -319,14 +327,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = YL6N8LP6KK;
+				DEVELOPMENT_TEAM = SVKXCL5QB5;
 				INFOPLIST_FILE = "Non-Interactive Transition/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "swiftPal.Non-Interactive-Transition";
+				PRODUCT_BUNDLE_IDENTIFIER = com.andes.slideinMenu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
