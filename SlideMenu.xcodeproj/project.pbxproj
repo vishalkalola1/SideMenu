@@ -19,7 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9E52725525C97C5B00F37767 /* Non-Interactive Transition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Non-Interactive Transition.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E52725525C97C5B00F37767 /* SlideMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E52725825C97C5B00F37767 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9E52725C25C97C5B00F37767 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9E52725F25C97C5B00F37767 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -46,7 +46,7 @@
 		9E52724C25C97C5B00F37767 = {
 			isa = PBXGroup;
 			children = (
-				9E52725725C97C5B00F37767 /* Non-Interactive Transition */,
+				9E52725725C97C5B00F37767 /* SlideMenu */,
 				9E52725625C97C5B00F37767 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,12 +54,12 @@
 		9E52725625C97C5B00F37767 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9E52725525C97C5B00F37767 /* Non-Interactive Transition.app */,
+				9E52725525C97C5B00F37767 /* SlideMenu.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9E52725725C97C5B00F37767 /* Non-Interactive Transition */ = {
+		9E52725725C97C5B00F37767 /* SlideMenu */ = {
 			isa = PBXGroup;
 			children = (
 				C9DFA94F286EF16700797509 /* Presentation */,
@@ -71,7 +71,7 @@
 				9E52726325C97C5B00F37767 /* LaunchScreen.storyboard */,
 				9E52726625C97C5B00F37767 /* Info.plist */,
 			);
-			path = "Non-Interactive Transition";
+			path = SlideMenu;
 			sourceTree = "<group>";
 		};
 		C9DFA94F286EF16700797509 /* Presentation */ = {
@@ -87,9 +87,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9E52725425C97C5B00F37767 /* Non-Interactive Transition */ = {
+		9E52725425C97C5B00F37767 /* SlideMenu */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9E52726925C97C5B00F37767 /* Build configuration list for PBXNativeTarget "Non-Interactive Transition" */;
+			buildConfigurationList = 9E52726925C97C5B00F37767 /* Build configuration list for PBXNativeTarget "SlideMenu" */;
 			buildPhases = (
 				9E52725125C97C5B00F37767 /* Sources */,
 				9E52725225C97C5B00F37767 /* Frameworks */,
@@ -99,9 +99,9 @@
 			);
 			dependencies = (
 			);
-			name = "Non-Interactive Transition";
+			name = SlideMenu;
 			productName = "Non-Interactive Transition";
-			productReference = 9E52725525C97C5B00F37767 /* Non-Interactive Transition.app */;
+			productReference = 9E52725525C97C5B00F37767 /* SlideMenu.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -118,7 +118,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9E52725025C97C5B00F37767 /* Build configuration list for PBXProject "Non-Interactive Transition" */;
+			buildConfigurationList = 9E52725025C97C5B00F37767 /* Build configuration list for PBXProject "SlideMenu" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -131,7 +131,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9E52725425C97C5B00F37767 /* Non-Interactive Transition */,
+				9E52725425C97C5B00F37767 /* SlideMenu */,
 			);
 		};
 /* End PBXProject section */
@@ -308,7 +308,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SVKXCL5QB5;
-				INFOPLIST_FILE = "Non-Interactive Transition/Info.plist";
+				INFOPLIST_FILE = SlideMenu/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -328,7 +328,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SVKXCL5QB5;
-				INFOPLIST_FILE = "Non-Interactive Transition/Info.plist";
+				INFOPLIST_FILE = SlideMenu/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -344,7 +344,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9E52725025C97C5B00F37767 /* Build configuration list for PBXProject "Non-Interactive Transition" */ = {
+		9E52725025C97C5B00F37767 /* Build configuration list for PBXProject "SlideMenu" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9E52726725C97C5B00F37767 /* Debug */,
@@ -353,7 +353,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9E52726925C97C5B00F37767 /* Build configuration list for PBXNativeTarget "Non-Interactive Transition" */ = {
+		9E52726925C97C5B00F37767 /* Build configuration list for PBXNativeTarget "SlideMenu" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9E52726A25C97C5B00F37767 /* Debug */,
