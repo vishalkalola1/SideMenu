@@ -138,17 +138,15 @@ extension SlideInPresentationController {
         case .changed:
             interactionController?.update(percent)
         case .ended, .cancelled:
-            let velocity = gesture.velocity(in: gesture.view)
             interactionController?.completionSpeed = 0.999  // https://stackoverflow.com/a/42972283/1271826
-            finishInteraction(percent, velocity: velocity)
+            finishInteraction(percent)
             (self.delegate as? CustomAdaptiveDelegate)?.interactor(nil)
         default:
             break
         }
     }
     
-    private func finishInteraction(_ percent: Double, velocity: CGPoint) {
-        
+    private func finishInteraction(_ percent: Double) {
         if percent > config.minimumScreenRatioToHide {
             interactionController?.finish()
         } else {

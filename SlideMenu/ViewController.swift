@@ -14,7 +14,12 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setNeedsUpdateOfScreenEdgesDeferringSystemGestures()
         updateDelegate()
+    }
+    
+    override var prefersStatusBarHidden: Bool {
+        true
     }
     
     func updateDelegate() {
@@ -25,6 +30,10 @@ class ViewController: UIViewController {
     
     @IBAction func presentClicked(_ sender: Any) {
         presentSideMenu()
+    }
+    
+    override var preferredScreenEdgesDeferringSystemGestures: UIRectEdge {
+        [.top, .bottom]
     }
     
     @IBAction func segmentAction(_ sender: UISegmentedControl) {

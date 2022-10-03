@@ -57,18 +57,28 @@ final class SlideInPresentationManager: NSObject {
     
     @objc func handleEdgePan(_ gesture: UIPanGestureRecognizer) {
         let translate = gesture.translation(in: gesture.view)
-        let percent   = translate.x / gesture.view!.bounds.size.width
+        var percent   = 0.0
+        switch direction {
+            case .top:
+                percent = translate.y / gesture.view!.bounds.size.height
+            case .bottom:
+                percent = -translate.y / gesture.view!.bounds.size.height
+            case .right:
+                percent = -translate.x / gesture.view!.bounds.size.width
+            case .left:
+                percent = translate.x / gesture.view!.bounds.size.width
+        }
         
         switch gesture.state {
             case .began:
                 interactionController = UIPercentDrivenInteractiveTransition()
                 presentAction()
             case .changed:
+                print(percent)
                 interactionController?.update(percent)
             case .ended, .cancelled:
-                let velocity = gesture.velocity(in: gesture.view)
                 interactionController?.completionSpeed = 0.999  // https://stackoverflow.com/a/42972283/1271826
-                if (percent > config.minimumScreenRatioToHide && velocity.x == 0) || velocity.x > 0 {
+                if percent > config.minimumScreenRatioToHide {
                     interactionController?.finish()
                 } else {
                     interactionController?.cancel()
